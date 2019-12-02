@@ -1,0 +1,100 @@
+@import 'colors';
+@import 'sizes';
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
+* {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.signIn {
+	height: 100%;
+	background-image: url('./../assets/images/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centralized-items {
+	width: 60%;
+}
+
+.social-auth {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 45%;
+}
+
+.signIn h4 {
+	color: white;
+	background-color: $primary;
+	width: 35%;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.error-message {
+	color: red;
+	font-weight: 400;
+}
+
+.page-not-found {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.page-not-found span {
+	background-color: $primary;
+	color: white;
+	padding: 100px;
+	letter-spacing: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page-not-found span > h4 {
+	font-weight: 100;
+	font-size: larger;
+}
+
+.page-not-found span > a {
+	color: white;
+}
+
+.header {
+	background-color: $primary;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	.search-bar {
+		width: 40vw;
+		align-self: center;
+		display: flex;
+		flex-direction: row;
+		color: $primary;
+		.input {
+			margin-left: 5px;
+			width: 100%;
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	h4 {
+		margin: 5px 10px;
+	}
+}
